@@ -1,0 +1,54 @@
+{
+  "name": "vscode-yt-player",
+  "version": "0.0.1",
+  "description": "VSCode Youtube Player",
+  "scripts": {
+    "vscode:prepublish": "webpack --mode production",
+    "webpack": "webpack --mode development",
+    "webpack-dev": "webpack --mode development --watch",
+    "test-compile": "tsc -p ./"
+  },
+  "activationEvents": [
+    "onCommand:catCoding.start"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "catCoding.start",
+        "title": "Start new cat coding session",
+        "category": "Cat Coding"
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.23.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmaniteja/vscode-yt-player.git"
+  },
+  "keywords": [
+    "VSCode",
+    "plygin",
+    "extension",
+    "youtube",
+    "player"
+  ],
+  "author": "Maniteja Baragada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmaniteja/vscode-yt-player/issues"
+  },
+  "homepage": "https://github.com/bmaniteja/vscode-yt-player#readme",
+  "dependencies": {
+    "vscode": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.0",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
